@@ -1,0 +1,34 @@
+    1  sudo yum update
+    2  lsblk
+    3  sudo mkfs -t ext4 /dev/xvdf
+    4  sudo file -s /dev/xvdf
+    5  sudo mkdir ebs
+    6  ls
+    7  sudo mount /dev/xvdf ebs
+    8  lsblk
+    9  ls
+   10  cd ebs
+
+
+command for efs:
+
+ubuntu ami:
+  sudo apt-get update
+  sudo apt-get install nfs-common
+  sudo mkdir efs
+  mount - using the nfs client
+  df -h
+
+linux 2 ami:
+  sudo yum update
+  sudo yum install nfs-utils
+  sudo mkdir efs
+  mount - using the nfs client
+  df -h
+
+red-hat ami:
+  sudo yum update
+  sudo yum install nfs-utils
+  sudo mkdir efs
+  mount - using the nfs client
+  df -h

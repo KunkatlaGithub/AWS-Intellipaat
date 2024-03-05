@@ -1,0 +1,18 @@
+VPC :
+
+
+VPC CIDR : 120.0.0.0/16
+
+SUBNET 1 (PUBLIC) CIDR : 120.0.1.0/24
+
+SUBNET 2 (PRIVATE) CIDR : 120.0.2.0/24
+
+SUBNET 3 (PRIVATE) CIDR : 120.0.3.0/24
+
+
+Commands to connect to private instance:
+
+    sudo nano anuj_vpc_kp.pem (create a kp in public instance)
+    ls
+    sudo chmod 400 anuj_vpc_kp.pem (change the permission of kp file)
+    sudo ssh -i "anuj_vpc_kp.pem" ubuntu@120.0.2.186 (used to ssh into private instance)
